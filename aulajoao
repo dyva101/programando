@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+/*
+    Anotações:
+
+    = -> Atribuir Valor (Exemplo: n = 1)
+
+    == -> Condição (Exemplo: Se n == 1)
+
+    ----
+
+    Função Main é SEMPRE EXECUTADA COM PRIORIDADE, tendo retorno INTEIRO
+
+    As outras funções devem ser chamadas dentro do main, mas escritas fora do seu ESCOPO.
+    (ESCOPO é tudo o que está entre as {} da função :)
+
+
+*/
+void funcao (int i) { //cada função tem um escopo
+
+    int soma = 899 + i;
+    printf("// 899 + %i = %i //", i, soma);
+    printf("Rademaker\n");
+}
+
+int main (int argc, char* argv[]) {
+
+    int n;
+    sscanf(argv[1], "%i", &n);
+
+    for (int i = 0; i < 4; i++) {
+        printf("João ");
+    }
+
+    funcao(n);
+    return 0;
+} 
