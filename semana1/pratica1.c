@@ -182,6 +182,7 @@ int main(int argc, char *argv[]) {
 }
 **/ //o sscanf puxa valores de uma variável string, não da stdin. Compreendi :)
 
+/**
 #include <stdio.h>
 
 int get_value(char prompt[]) {
@@ -210,4 +211,4 @@ int main(void)
 
   printf("Average: %f\n", average(n, scores));
 }
-
+**/ // get_value evita valores negativos ou nulos. Compreendi :)
